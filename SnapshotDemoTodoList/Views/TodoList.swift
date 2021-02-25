@@ -15,30 +15,9 @@ struct TodoList: View {
     NavigationView {
       List {
         ForEach(itemStore.items) { item in
-          HStack {
-            Image(systemName: item.isCompleted ? "checkmark.circle.fill" : "circle")
-              .imageScale(.large)
-              .foregroundColor(item.isCompleted ? .green : .primary)
-            Text(item.title)
-            Spacer()
-          }
-          .onTapGesture {
-            itemStore.toggleComplete(item)
-          }
+          TodoItem(item: item)
         }
-        HStack {
-          Image(systemName: "circle")
-            .imageScale(.large)
-            .foregroundColor(
-              newItemTitle.isEmpty ? Color(.systemGray3) : .primary
-            )
-          TextField("New TODO", text: $newItemTitle, onCommit:  {
-            withAnimation {
-              self.itemStore.add(self.newItemTitle)
-              self.newItemTitle = ""
-            }
-          })
-        }
+        TodoNewItem()
       }
       .navigationBarTitle("Todo")
       .navigationBarItems(trailing: Button("Clear", action: {
