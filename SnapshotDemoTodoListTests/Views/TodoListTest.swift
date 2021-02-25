@@ -18,7 +18,8 @@ class TodoListTest: XCTestCase {
     let view = TodoList().environmentObject(store)
     let vc = UIHostingController(rootView: view)
     
-    assertSnapshot(matching: vc, as: .image)
+    assertSnapshot(matching: vc, as: .image(on: .iPhoneSe))
+    assertSnapshot(matching: vc, as: .image(on: .iPhoneXsMax))
   }
   
   func testTodoListWithOneItem() {
@@ -27,7 +28,8 @@ class TodoListTest: XCTestCase {
     let view = TodoList().environmentObject(store)
     let vc = UIHostingController(rootView: view)
     
-    assertSnapshot(matching: vc, as: .image)
+    assertSnapshot(matching: vc, as: .image(on: .iPhoneSe))
+    assertSnapshot(matching: vc, as: .image(on: .iPhoneXsMax))
   }
   
   func testTodoListWithALongItem() {
@@ -36,6 +38,7 @@ class TodoListTest: XCTestCase {
     let view = TodoList().environmentObject(store)
     let vc = UIHostingController(rootView: view)
     
-    assertSnapshot(matching: vc, as: .image)
+    assertSnapshot(matching: vc, as: .image(on: .iPhoneSe))
+    assertSnapshot(matching: vc, as: .image(on: .iPhoneXsMax))
   }
 }
