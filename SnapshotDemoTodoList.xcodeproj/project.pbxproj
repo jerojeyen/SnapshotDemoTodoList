@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,18 @@
 		0D2010F325E7FA66008911E9 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2010F225E7FA66008911E9 /* Item.swift */; };
 		0D2010F825E7FB3B008911E9 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2010F725E7FB3B008911E9 /* ItemStore.swift */; };
 		0D2010FD25E7FBBD008911E9 /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2010FC25E7FBBD008911E9 /* TodoList.swift */; };
+		0D20111125E805F8008911E9 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 0D20111025E805F8008911E9 /* SnapshotTesting */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D20110825E80543008911E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D2010C325E7F7C0008911E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D2010CE25E7F7C1008911E9;
+			remoteInfo = "SnapshotDemoTodoList (iOS)";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0D2010C825E7F7C0008911E9 /* SnapshotDemoTodoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotDemoTodoListApp.swift; sourceTree = "<group>"; };
@@ -24,6 +35,8 @@
 		0D2010F225E7FA66008911E9 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		0D2010F725E7FB3B008911E9 /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 		0D2010FC25E7FBBD008911E9 /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
+		0D20110325E80543008911E9 /* SnapshotDemoTodoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapshotDemoTodoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D20110725E80543008911E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +44,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D20110025E80543008911E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D20111125E805F8008911E9 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +63,7 @@
 			children = (
 				0D2010C725E7F7C0008911E9 /* SnapshotDemoTodoList */,
 				0D2010D125E7F7C1008911E9 /* iOS */,
+				0D20110425E80543008911E9 /* SnapshotDemoTodoListTests */,
 				0D2010D025E7F7C1008911E9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				0D2010CF25E7F7C1008911E9 /* SnapshotDemoTodoList.app */,
+				0D20110325E80543008911E9 /* SnapshotDemoTodoListTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +122,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		0D20110425E80543008911E9 /* SnapshotDemoTodoListTests */ = {
+			isa = PBXGroup;
+			children = (
+				0D20110725E80543008911E9 /* Info.plist */,
+			);
+			path = SnapshotDemoTodoListTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,6 +150,27 @@
 			productReference = 0D2010CF25E7F7C1008911E9 /* SnapshotDemoTodoList.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0D20110225E80543008911E9 /* SnapshotDemoTodoListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D20110A25E80543008911E9 /* Build configuration list for PBXNativeTarget "SnapshotDemoTodoListTests" */;
+			buildPhases = (
+				0D2010FF25E80543008911E9 /* Sources */,
+				0D20110025E80543008911E9 /* Frameworks */,
+				0D20110125E80543008911E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D20110925E80543008911E9 /* PBXTargetDependency */,
+			);
+			name = SnapshotDemoTodoListTests;
+			packageProductDependencies = (
+				0D20111025E805F8008911E9 /* SnapshotTesting */,
+			);
+			productName = SnapshotDemoTodoListTests;
+			productReference = 0D20110325E80543008911E9 /* SnapshotDemoTodoListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -131,6 +183,10 @@
 					0D2010CE25E7F7C1008911E9 = {
 						CreatedOnToolsVersion = 12.4;
 					};
+					0D20110225E80543008911E9 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 0D2010CE25E7F7C1008911E9;
+					};
 				};
 			};
 			buildConfigurationList = 0D2010C625E7F7C0008911E9 /* Build configuration list for PBXProject "SnapshotDemoTodoList" */;
@@ -142,11 +198,15 @@
 				Base,
 			);
 			mainGroup = 0D2010C225E7F7C0008911E9;
+			packageReferences = (
+				0D20110F25E805F8008911E9 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+			);
 			productRefGroup = 0D2010D025E7F7C1008911E9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				0D2010CE25E7F7C1008911E9 /* SnapshotDemoTodoList (iOS) */,
+				0D20110225E80543008911E9 /* SnapshotDemoTodoListTests */,
 			);
 		};
 /* End PBXProject section */
@@ -157,6 +217,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D2010DF25E7F7C1008911E9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D20110125E80543008911E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +242,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0D2010FF25E80543008911E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D20110925E80543008911E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D2010CE25E7F7C1008911E9 /* SnapshotDemoTodoList (iOS) */;
+			targetProxy = 0D20110825E80543008911E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0D2010E125E7F7C1008911E9 /* Debug */ = {
@@ -334,6 +416,51 @@
 			};
 			name = Release;
 		};
+		0D20110B25E80543008911E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K89BVC8GF7;
+				INFOPLIST_FILE = SnapshotDemoTodoListTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerojeyen.SnapshotDemoTodoListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnapshotDemoTodoList.app/SnapshotDemoTodoList";
+			};
+			name = Debug;
+		};
+		0D20110C25E80543008911E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K89BVC8GF7;
+				INFOPLIST_FILE = SnapshotDemoTodoListTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerojeyen.SnapshotDemoTodoListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnapshotDemoTodoList.app/SnapshotDemoTodoList";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -355,7 +482,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		0D20110A25E80543008911E9 /* Build configuration list for PBXNativeTarget "SnapshotDemoTodoListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D20110B25E80543008911E9 /* Debug */,
+				0D20110C25E80543008911E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0D20110F25E805F8008911E9 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0D20111025E805F8008911E9 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0D20110F25E805F8008911E9 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0D2010C325E7F7C0008911E9 /* Project object */;
 }
