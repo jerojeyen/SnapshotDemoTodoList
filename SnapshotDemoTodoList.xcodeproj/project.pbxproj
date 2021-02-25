@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0D2010DB25E7F7C1008911E9 /* SnapshotDemoTodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2010C825E7F7C0008911E9 /* SnapshotDemoTodoListApp.swift */; };
-		0D2010DC25E7F7C1008911E9 /* SnapshotDemoTodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2010C825E7F7C0008911E9 /* SnapshotDemoTodoListApp.swift */; };
 		0D2010DD25E7F7C1008911E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2010C925E7F7C0008911E9 /* ContentView.swift */; };
-		0D2010DE25E7F7C1008911E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2010C925E7F7C0008911E9 /* ContentView.swift */; };
 		0D2010DF25E7F7C1008911E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D2010CA25E7F7C1008911E9 /* Assets.xcassets */; };
-		0D2010E025E7F7C1008911E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D2010CA25E7F7C1008911E9 /* Assets.xcassets */; };
+		0D2010F325E7FA66008911E9 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2010F225E7FA66008911E9 /* Item.swift */; };
+		0D2010F825E7FB3B008911E9 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2010F725E7FB3B008911E9 /* ItemStore.swift */; };
+		0D2010FD25E7FBBD008911E9 /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2010FC25E7FBBD008911E9 /* TodoList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,20 +21,13 @@
 		0D2010CA25E7F7C1008911E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D2010CF25E7F7C1008911E9 /* SnapshotDemoTodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapshotDemoTodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D2010D225E7F7C1008911E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0D2010D725E7F7C1008911E9 /* SnapshotDemoTodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapshotDemoTodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0D2010D925E7F7C1008911E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0D2010DA25E7F7C1008911E9 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		0D2010F225E7FA66008911E9 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		0D2010F725E7FB3B008911E9 /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
+		0D2010FC25E7FBBD008911E9 /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0D2010CC25E7F7C1008911E9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0D2010D425E7F7C1008911E9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,28 +40,29 @@
 		0D2010C225E7F7C0008911E9 = {
 			isa = PBXGroup;
 			children = (
-				0D2010C725E7F7C0008911E9 /* Shared */,
+				0D2010C725E7F7C0008911E9 /* SnapshotDemoTodoList */,
 				0D2010D125E7F7C1008911E9 /* iOS */,
-				0D2010D825E7F7C1008911E9 /* macOS */,
 				0D2010D025E7F7C1008911E9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0D2010C725E7F7C0008911E9 /* Shared */ = {
+		0D2010C725E7F7C0008911E9 /* SnapshotDemoTodoList */ = {
 			isa = PBXGroup;
 			children = (
+				0D2010FB25E7FB9E008911E9 /* Views */,
+				0D2010F625E7FA87008911E9 /* Data */,
+				0D2010F125E7FA53008911E9 /* Models */,
 				0D2010C825E7F7C0008911E9 /* SnapshotDemoTodoListApp.swift */,
 				0D2010C925E7F7C0008911E9 /* ContentView.swift */,
 				0D2010CA25E7F7C1008911E9 /* Assets.xcassets */,
 			);
-			path = Shared;
+			path = SnapshotDemoTodoList;
 			sourceTree = "<group>";
 		};
 		0D2010D025E7F7C1008911E9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				0D2010CF25E7F7C1008911E9 /* SnapshotDemoTodoList.app */,
-				0D2010D725E7F7C1008911E9 /* SnapshotDemoTodoList.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,13 +75,28 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
-		0D2010D825E7F7C1008911E9 /* macOS */ = {
+		0D2010F125E7FA53008911E9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0D2010D925E7F7C1008911E9 /* Info.plist */,
-				0D2010DA25E7F7C1008911E9 /* macOS.entitlements */,
+				0D2010F225E7FA66008911E9 /* Item.swift */,
 			);
-			path = macOS;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0D2010F625E7FA87008911E9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0D2010F725E7FB3B008911E9 /* ItemStore.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0D2010FB25E7FB9E008911E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D2010FC25E7FBBD008911E9 /* TodoList.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,23 +119,6 @@
 			productReference = 0D2010CF25E7F7C1008911E9 /* SnapshotDemoTodoList.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0D2010D625E7F7C1008911E9 /* SnapshotDemoTodoList (macOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0D2010E625E7F7C1008911E9 /* Build configuration list for PBXNativeTarget "SnapshotDemoTodoList (macOS)" */;
-			buildPhases = (
-				0D2010D325E7F7C1008911E9 /* Sources */,
-				0D2010D425E7F7C1008911E9 /* Frameworks */,
-				0D2010D525E7F7C1008911E9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "SnapshotDemoTodoList (macOS)";
-			productName = "SnapshotDemoTodoList (macOS)";
-			productReference = 0D2010D725E7F7C1008911E9 /* SnapshotDemoTodoList.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -137,9 +129,6 @@
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					0D2010CE25E7F7C1008911E9 = {
-						CreatedOnToolsVersion = 12.4;
-					};
-					0D2010D625E7F7C1008911E9 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -158,7 +147,6 @@
 			projectRoot = "";
 			targets = (
 				0D2010CE25E7F7C1008911E9 /* SnapshotDemoTodoList (iOS) */,
-				0D2010D625E7F7C1008911E9 /* SnapshotDemoTodoList (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -172,14 +160,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0D2010D525E7F7C1008911E9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0D2010E025E7F7C1008911E9 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -187,17 +167,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D2010FD25E7FBBD008911E9 /* TodoList.swift in Sources */,
 				0D2010DD25E7F7C1008911E9 /* ContentView.swift in Sources */,
+				0D2010F325E7FA66008911E9 /* Item.swift in Sources */,
+				0D2010F825E7FB3B008911E9 /* ItemStore.swift in Sources */,
 				0D2010DB25E7F7C1008911E9 /* SnapshotDemoTodoListApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0D2010D325E7F7C1008911E9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0D2010DE25E7F7C1008911E9 /* ContentView.swift in Sources */,
-				0D2010DC25E7F7C1008911E9 /* SnapshotDemoTodoListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,54 +334,6 @@
 			};
 			name = Release;
 		};
-		0D2010E725E7F7C1008911E9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = K89BVC8GF7;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jerojeyen.SnapshotDemoTodoList;
-				PRODUCT_NAME = SnapshotDemoTodoList;
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		0D2010E825E7F7C1008911E9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = K89BVC8GF7;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jerojeyen.SnapshotDemoTodoList;
-				PRODUCT_NAME = SnapshotDemoTodoList;
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -425,15 +351,6 @@
 			buildConfigurations = (
 				0D2010E425E7F7C1008911E9 /* Debug */,
 				0D2010E525E7F7C1008911E9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0D2010E625E7F7C1008911E9 /* Build configuration list for PBXNativeTarget "SnapshotDemoTodoList (macOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0D2010E725E7F7C1008911E9 /* Debug */,
-				0D2010E825E7F7C1008911E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
