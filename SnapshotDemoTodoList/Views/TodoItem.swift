@@ -17,6 +17,7 @@ struct TodoItem: View {
         .imageScale(.large)
         .foregroundColor(item.isCompleted ? .green : .primary)
       Text(item.title)
+        .lineLimit(2)
       Spacer()
     }
     .onTapGesture {
