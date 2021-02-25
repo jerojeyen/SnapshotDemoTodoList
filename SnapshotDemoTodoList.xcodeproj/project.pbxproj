@@ -14,6 +14,7 @@
 		0D2010F825E7FB3B008911E9 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2010F725E7FB3B008911E9 /* ItemStore.swift */; };
 		0D2010FD25E7FBBD008911E9 /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2010FC25E7FBBD008911E9 /* TodoList.swift */; };
 		0D20111125E805F8008911E9 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 0D20111025E805F8008911E9 /* SnapshotTesting */; };
+		0D20111825E806CD008911E9 /* TodoListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D20111725E806CD008911E9 /* TodoListTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		0D2010FC25E7FBBD008911E9 /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
 		0D20110325E80543008911E9 /* SnapshotDemoTodoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapshotDemoTodoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D20110725E80543008911E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D20111725E806CD008911E9 /* TodoListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,9 +127,18 @@
 		0D20110425E80543008911E9 /* SnapshotDemoTodoListTests */ = {
 			isa = PBXGroup;
 			children = (
+				0D20111625E80669008911E9 /* Views */,
 				0D20110725E80543008911E9 /* Info.plist */,
 			);
 			path = SnapshotDemoTodoListTests;
+			sourceTree = "<group>";
+		};
+		0D20111625E80669008911E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D20111725E806CD008911E9 /* TodoListTest.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +196,7 @@
 					};
 					0D20110225E80543008911E9 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 						TestTargetID = 0D2010CE25E7F7C1008911E9;
 					};
 				};
@@ -246,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D20111825E806CD008911E9 /* TodoListTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +433,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K89BVC8GF7;
 				INFOPLIST_FILE = SnapshotDemoTodoListTests/Info.plist;
@@ -432,6 +446,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jerojeyen.SnapshotDemoTodoListTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnapshotDemoTodoList.app/SnapshotDemoTodoList";
@@ -442,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K89BVC8GF7;
 				INFOPLIST_FILE = SnapshotDemoTodoListTests/Info.plist;
